@@ -1,0 +1,2110 @@
+[
+  {
+    "number": "1",
+    "question": "1. 在与大语言模型交流时，使用文本分隔符的主要目的是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提高大语言模型的响应速度"
+      },
+      {
+        "label": "B",
+        "content": "增加大语言模型的词汇量"
+      },
+      {
+        "label": "C",
+        "content": "使大语言模型能够执行复杂的逻辑运算"
+      },
+      {
+        "label": "D",
+        "content": "分割指令和上下文，帮助大语言模型更好地理解任务"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "2",
+    "question": "2.下面哪个符号可以用来在提示中强调重点内容？",
+    "options": [
+      {
+        "label": "A",
+        "content": "#"
+      },
+      {
+        "label": "B",
+        "content": "%"
+      },
+      {
+        "label": "C",
+        "content": "**"
+      },
+      {
+        "label": "D",
+        "content": "$"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "3",
+    "question": "3.使用有序列表时，通常用于表示什么类型的元素？",
+    "options": [
+      {
+        "label": "A",
+        "content": "需要强调的元素"
+      },
+      {
+        "label": "B",
+        "content": "需要量化的元素"
+      },
+      {
+        "label": "C",
+        "content": "有先后顺序的元素"
+      },
+      {
+        "label": "D",
+        "content": "无顺序要求的元素"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "4",
+    "question": "4.使用大语言模型时，为了获得更准确的结果，应如何量化任务要求？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用模糊的描述"
+      },
+      {
+        "label": "B",
+        "content": "使用明确的数字和可度量指标"
+      },
+      {
+        "label": "C",
+        "content": "使用复杂的数学公式"
+      },
+      {
+        "label": "D",
+        "content": "使用随机数"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "5",
+    "question": "5.当你不希望大语言模型执行某项操作时，应该如何表达？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用否定句"
+      },
+      {
+        "label": "B",
+        "content": "使用命令式语气"
+      },
+      {
+        "label": "C",
+        "content": "直接告诉它“不要做什么”"
+      },
+      {
+        "label": "D",
+        "content": "告诉它在遇到这种情况时应该怎么做"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "6",
+    "question": "6.大语言模型的“接龙”特性可以用来：",
+    "options": [
+      {
+        "label": "A",
+        "content": "预测用户下一步的行动"
+      },
+      {
+        "label": "B",
+        "content": "引导大语言模型的下一步动作"
+      },
+      {
+        "label": "C",
+        "content": "改变大语言模型的响应风格"
+      },
+      {
+        "label": "D",
+        "content": "限制大语言模型的响应范围"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "7",
+    "question": "7.在多轮对话中，为了使大语言模型的回答更加准确，应该：",
+    "options": [
+      {
+        "label": "A",
+        "content": "保持对话主题的连贯性"
+      },
+      {
+        "label": "B",
+        "content": "在同一对话中讨论不同主题"
+      },
+      {
+        "label": "C",
+        "content": "频繁更换对话"
+      },
+      {
+        "label": "D",
+        "content": "使用复杂的提示"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "8",
+    "question": "8.大语言模型插件的主要作用是：",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供实时信息"
+      },
+      {
+        "label": "B",
+        "content": "扩展大语言模型的功能"
+      },
+      {
+        "label": "C",
+        "content": "提高大语言模型的计算能力"
+      },
+      {
+        "label": "D",
+        "content": "限制大语言模型的响应范围"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "9",
+    "question": "9.在大语言模型中，如何强调关键词？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用Markdown加粗语法"
+      },
+      {
+        "label": "B",
+        "content": "使用Markdown斜体语法"
+      },
+      {
+        "label": "C",
+        "content": "使用Markdown下划线语法"
+      },
+      {
+        "label": "D",
+        "content": "使用Markdown删除线语法"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "10",
+    "question": "10.在提示工程中，如何有效地利用大语言模型进行文本转换？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供不完整的句子"
+      },
+      {
+        "label": "B",
+        "content": "使用特定的格式要求"
+      },
+      {
+        "label": "C",
+        "content": "提供错误的上下文信息"
+      },
+      {
+        "label": "D",
+        "content": "忽略模型的输出格式"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "11",
+    "question": "11.在创作一幅融合了古典油画与现代摄影技术的图像时，以下哪个提示词最能体现这种融合？",
+    "options": [
+      {
+        "label": "A",
+        "content": "古典油画作品"
+      },
+      {
+        "label": "B",
+        "content": "现代摄影作品"
+      },
+      {
+        "label": "C",
+        "content": "现代摄影技巧"
+      },
+      {
+        "label": "D",
+        "content": "使用古典油画技巧的肖像摄影"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "12",
+    "question": "12.在个性化创作中，以下哪个提示词最能体现创作者对个人生活经历的反映？",
+    "options": [
+      {
+        "label": "A",
+        "content": "童年记忆中的老街"
+      },
+      {
+        "label": "B",
+        "content": "通用的海滩日落场景"
+      },
+      {
+        "label": "C",
+        "content": "流行的都市夜景"
+      },
+      {
+        "label": "D",
+        "content": "传统的节日庆典"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "13",
+    "question": "13.在AI生成的艺术作品中，如果使用了他人的版权素材，应该如何处理？",
+    "options": [
+      {
+        "label": "A",
+        "content": "忽略版权，直接使用"
+      },
+      {
+        "label": "B",
+        "content": "修改后声称为原创"
+      },
+      {
+        "label": "C",
+        "content": "购买版权或获取授权"
+      },
+      {
+        "label": "D",
+        "content": "仅在私人用途中使用"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "14",
+    "question": "14.在AI艺术创作社区中，如何有效地获取创作灵感？",
+    "options": [
+      {
+        "label": "A",
+        "content": "浏览社区中的热门作品"
+      },
+      {
+        "label": "B",
+        "content": "忽略社区，独自创作"
+      },
+      {
+        "label": "C",
+        "content": "只关注自己的作品"
+      },
+      {
+        "label": "D",
+        "content": "避免与其他创作者交流"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "15",
+    "question": "15.在构建叙事性图像的提示词时，以下哪个元素最能体现故事的起始？",
+    "options": [
+      {
+        "label": "A",
+        "content": "故事的高潮部分"
+      },
+      {
+        "label": "B",
+        "content": "主角的背景介绍"
+      },
+      {
+        "label": "C",
+        "content": "故事的结局"
+      },
+      {
+        "label": "D",
+        "content": "故事的转折点"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "16",
+    "question": "16.在构建高级修饰技巧的提示词时，以下哪个选项最能体现对图像细节的强调？",
+    "options": [
+      {
+        "label": "A",
+        "content": "模糊的背景"
+      },
+      {
+        "label": "B",
+        "content": "清晰的轮廓"
+      },
+      {
+        "label": "C",
+        "content": "柔和的色彩"
+      },
+      {
+        "label": "D",
+        "content": "抽象的图案"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "17",
+    "question": "17.在提示词中，哪个选项最能体现对图像构图的精心设计？",
+    "options": [
+      {
+        "label": "A",
+        "content": "随意布局"
+      },
+      {
+        "label": "B",
+        "content": "无序构图"
+      },
+      {
+        "label": "C",
+        "content": "杂乱无章"
+      },
+      {
+        "label": "D",
+        "content": "黄金分割"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "18",
+    "question": "18.为了在提示词中实现创意的突破，以下哪个方法最为关键？",
+    "options": [
+      {
+        "label": "A",
+        "content": "遵循传统的创作流程"
+      },
+      {
+        "label": "B",
+        "content": "挑战现有的创作规则"
+      },
+      {
+        "label": "C",
+        "content": "避免使用任何创新元素"
+      },
+      {
+        "label": "D",
+        "content": "仅仅复制他人的成功案例"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "19",
+    "question": "19.在李一舟卖课事件中，如果未经授权使用他人AI模型，这可能对原创者造成什么影响？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提高知名度"
+      },
+      {
+        "label": "B",
+        "content": "增加收入"
+      },
+      {
+        "label": "C",
+        "content": "经济损失"
+      },
+      {
+        "label": "D",
+        "content": "增强创作动力"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "20",
+    "question": "20.在构建一个融合了未来主义和复古风格的图像提示词时，哪个选项最能准确描述这种风格融合？",
+    "options": [
+      {
+        "label": "A",
+        "content": "未来与复古风格的结合"
+      },
+      {
+        "label": "B",
+        "content": "复古元素的未来主义设计"
+      },
+      {
+        "label": "C",
+        "content": "未来主义元素的复古场景"
+      },
+      {
+        "label": "D",
+        "content": "复古风格中融入未来主义色彩"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "21",
+    "question": "21.在图像生成过程中，步数的增加通常会导致哪方面的提升？",
+    "options": [
+      {
+        "label": "A",
+        "content": "生成速度"
+      },
+      {
+        "label": "B",
+        "content": "生成成本"
+      },
+      {
+        "label": "C",
+        "content": "生成的多样性"
+      },
+      {
+        "label": "D",
+        "content": "图像细节丰富程度"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "22",
+    "question": "22.在提示词中，如何表达希望图像中的元素具有特定的色调？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用强调技巧"
+      },
+      {
+        "label": "B",
+        "content": "使用细节描述语"
+      },
+      {
+        "label": "C",
+        "content": "使用艺术家风格"
+      },
+      {
+        "label": "D",
+        "content": "使用负面提示词"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "23",
+    "question": "23.在提示词中，哪个词汇可以用来避免图像中出现不希望的元素，如模糊或突变？",
+    "options": [
+      {
+        "label": "A",
+        "content": "清晰"
+      },
+      {
+        "label": "B",
+        "content": "高质量"
+      },
+      {
+        "label": "C",
+        "content": "负面提示词"
+      },
+      {
+        "label": "D",
+        "content": "艺术家风格"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "24",
+    "question": "24.在提示词中，哪个艺术家的名字被用来生成类似其风格的图像？",
+    "options": [
+      {
+        "label": "A",
+        "content": "梵高"
+      },
+      {
+        "label": "B",
+        "content": "毕加索"
+      },
+      {
+        "label": "C",
+        "content": "达芬奇"
+      },
+      {
+        "label": "D",
+        "content": "以上都是"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "25",
+    "question": "25.在AIGC以文生图工具中，选择模型的目的是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提高图像的输出分辨率"
+      },
+      {
+        "label": "B",
+        "content": "控制图像的生成步数"
+      },
+      {
+        "label": "C",
+        "content": "改变图像的艺术家风格"
+      },
+      {
+        "label": "D",
+        "content": "优化图像的描述词"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "26",
+    "question": "26.使用“超写实”这一修饰语时，它通常用来增强图像的哪个方面？",
+    "options": [
+      {
+        "label": "A",
+        "content": "色彩饱和度"
+      },
+      {
+        "label": "B",
+        "content": "细节丰富度"
+      },
+      {
+        "label": "C",
+        "content": "对比度"
+      },
+      {
+        "label": "D",
+        "content": "动态范围"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "27",
+    "question": "27.在提示词中，用来定义画面艺术风格的词汇属于哪一类？",
+    "options": [
+      {
+        "label": "A",
+        "content": "绘画对象"
+      },
+      {
+        "label": "B",
+        "content": "对象描述词"
+      },
+      {
+        "label": "C",
+        "content": "风格修饰词"
+      },
+      {
+        "label": "D",
+        "content": "细节描述语"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "28",
+    "question": "28.在以文生图提示词中，哪个风格可以用来生成具有强烈视觉冲击力和鲜艳色彩的图像？",
+    "options": [
+      {
+        "label": "A",
+        "content": "波普艺术"
+      },
+      {
+        "label": "B",
+        "content": "最小主义"
+      },
+      {
+        "label": "C",
+        "content": "新古典主义"
+      },
+      {
+        "label": "D",
+        "content": "抽象表现主义"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "29",
+    "question": "29.如果想要在提示词中表达从上方观察的视角，应该使用哪个术语？",
+    "options": [
+      {
+        "label": "A",
+        "content": "俯视视角"
+      },
+      {
+        "label": "B",
+        "content": "仰视视角"
+      },
+      {
+        "label": "C",
+        "content": "平视视角"
+      },
+      {
+        "label": "D",
+        "content": "侧视视角"
+      }
+    ],
+    "answer": "A",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "30",
+    "question": "30.如果想要在提示词中强调图像的动态效果，应该使用哪个细节描述语？",
+    "options": [
+      {
+        "label": "A",
+        "content": "静态"
+      },
+      {
+        "label": "B",
+        "content": "动态模糊"
+      },
+      {
+        "label": "C",
+        "content": "静态模糊"
+      },
+      {
+        "label": "D",
+        "content": "清晰静止"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "31",
+    "question": "31.在与大型语言模型交互时，编写清晰、具体的提示词的目的是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "增加模型的复杂性"
+      },
+      {
+        "label": "B",
+        "content": "提高模型输出的质量和相关性"
+      },
+      {
+        "label": "C",
+        "content": "减少模型的响应时间"
+      },
+      {
+        "label": "D",
+        "content": "限制模型的输出长度"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "32",
+    "question": "32.在进行复杂任务处理时，将任务拆分为更简单的子任务的主要好处是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提高任务的难度"
+      },
+      {
+        "label": "B",
+        "content": "降低任务的出错率"
+      },
+      {
+        "label": "C",
+        "content": "增加任务的执行时间"
+      },
+      {
+        "label": "D",
+        "content": "减少模型的计算资源需求"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "33",
+    "question": "33.当你想要检验自己对某个主题的理解程度时，你应该使用哪种提示词？",
+    "options": [
+      {
+        "label": "A",
+        "content": "你知道，GPT也知道"
+      },
+      {
+        "label": "B",
+        "content": "你不知道，GPT知道"
+      },
+      {
+        "label": "C",
+        "content": "检验自己认知/能力水平"
+      },
+      {
+        "label": "D",
+        "content": "让GPT完成具体任务"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "34",
+    "question": "34.如果你想要AI提供关于某个问题的解决方案或建议，你应该使用哪个提示技巧？",
+    "options": [
+      {
+        "label": "A",
+        "content": "概括"
+      },
+      {
+        "label": "B",
+        "content": "讲故事"
+      },
+      {
+        "label": "C",
+        "content": "问题解决"
+      },
+      {
+        "label": "D",
+        "content": "背景"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "35",
+    "question": "35.当你想要模型在回答中包含特定的格式元素（如标题、副标题、列表）时，你应该使用哪个提示技巧？",
+    "options": [
+      {
+        "label": "A",
+        "content": "概括"
+      },
+      {
+        "label": "B",
+        "content": "背景"
+      },
+      {
+        "label": "C",
+        "content": "格式化"
+      },
+      {
+        "label": "D",
+        "content": "优缺点分析"
+      }
+    ],
+    "answer": "C",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "36",
+    "question": "36.提示技术中，零样本提示（Zero-shot Prompting）的主要优势是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "需要大量的样本数据"
+      },
+      {
+        "label": "B",
+        "content": "不需要预先训练模型"
+      },
+      {
+        "label": "C",
+        "content": "需要复杂的模型调整"
+      },
+      {
+        "label": "D",
+        "content": "需要精确的数学计算"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "37",
+    "question": "37. 关于AdobeEdu.com AIGC联盟网站以下说法错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供AIGC相关的技术教程和视频"
+      },
+      {
+        "label": "B",
+        "content": "提供AIGC领域的学习资源和素材"
+      },
+      {
+        "label": "C",
+        "content": "提供当下最新最流行AIGC工具及网址导航"
+      },
+      {
+        "label": "D",
+        "content": "不提供AIGC相关的商务合作机会"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "38",
+    "question": "38.在Python编程中，大语言模型如何帮助学生理解代码注释的重要性？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供注释的复杂理论"
+      },
+      {
+        "label": "B",
+        "content": "通过示例展示注释如何提高代码的可读性"
+      },
+      {
+        "label": "C",
+        "content": "忽略注释的作用，只关注代码功能"
+      },
+      {
+        "label": "D",
+        "content": "只讲解注释的语法规则"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "39",
+    "question": "39.当学生需要在Python中实现一个特定功能，但不确定如何开始时，大语言模型如何提供帮助？",
+    "options": [
+      {
+        "label": "A",
+        "content": "模型提供完整的代码解决方案"
+      },
+      {
+        "label": "B",
+        "content": "模型只提供功能的理论描述"
+      },
+      {
+        "label": "C",
+        "content": "模型忽略学生的需求，只讲解其他内容"
+      },
+      {
+        "label": "D",
+        "content": "模型提供功能实现的思路和关键步骤"
+      }
+    ],
+    "answer": "D",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "40",
+    "question": "40.在英语教学中，大语言模型如何通过提示词帮助学生提高口语表达能力？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供固定的句子结构"
+      },
+      {
+        "label": "B",
+        "content": "模拟真实对话场景进行练习"
+      },
+      {
+        "label": "C",
+        "content": "限制学生的发音练习"
+      },
+      {
+        "label": "D",
+        "content": "忽略语境中的词汇使用"
+      }
+    ],
+    "answer": "B",
+    "type": "single",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "1",
+    "question": "1.在提示工程中，为了提高大语言模型的理解和输出质量，应该使用哪些技巧？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用文本分隔符（如\"###\"）来区分指令和上下文"
+      },
+      {
+        "label": "B",
+        "content": "利用Markdown语法（如加粗）来强调关键内容"
+      },
+      {
+        "label": "C",
+        "content": "使用有序列表（如\"1.\"）和无序列表（如\"-\"）来组织信息"
+      },
+      {
+        "label": "D",
+        "content": "量化任务要求，如指定生成内容的字数或步骤数量"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "2",
+    "question": "2.在构建提示时，以下哪些做法可以帮助大语言模型更准确地完成任务？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用明确的指令和上下文"
+      },
+      {
+        "label": "B",
+        "content": "使用否定指令"
+      },
+      {
+        "label": "C",
+        "content": "在多轮对话中保持主题的连贯性"
+      },
+      {
+        "label": "D",
+        "content": "利用大语言模型的“接龙”特性来引导下一步动作"
+      }
+    ],
+    "answer": "ACD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "3",
+    "question": "3.在提示工程中，为了确保大语言模型生成的文本符合预期，应该考虑哪些因素？",
+    "options": [
+      {
+        "label": "A",
+        "content": "文本的格式和结构"
+      },
+      {
+        "label": "B",
+        "content": "文本的内容和风格"
+      },
+      {
+        "label": "C",
+        "content": "文本的逻辑和连贯性"
+      },
+      {
+        "label": "D",
+        "content": "文本的原创性和创造性"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "4",
+    "question": "4.在提示工程中，以下哪些Markdown语法可以帮助大语言模型更好地理解任务要求？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用星号（*）创建无序列表"
+      },
+      {
+        "label": "B",
+        "content": "使用井号（#）创建有序列表"
+      },
+      {
+        "label": "C",
+        "content": "使用反引号（`）创建代码块"
+      },
+      {
+        "label": "D",
+        "content": "使用双星号（**）加粗文本"
+      }
+    ],
+    "answer": "ABD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "5",
+    "question": "5.在提示工程中，为了提高大语言模型的响应质量，应该如何处理任务的量化？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供具体的数字要求，如“生成5个方法”"
+      },
+      {
+        "label": "B",
+        "content": "使用模糊的描述，如“尽可能详细”"
+      },
+      {
+        "label": "C",
+        "content": "使用时间单位，如“不少于500字”"
+      },
+      {
+        "label": "D",
+        "content": "忽略任务的量化，让大语言模型自由发挥"
+      }
+    ],
+    "answer": "AC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "6",
+    "question": "6.在提示工程中，以下哪些做法可以帮助大语言模型更好地处理多轮对话？",
+    "options": [
+      {
+        "label": "A",
+        "content": "在每轮对话中更换主题"
+      },
+      {
+        "label": "B",
+        "content": "在对话开始时明确主题"
+      },
+      {
+        "label": "C",
+        "content": "在提示中包含系统消息，提供上下文"
+      },
+      {
+        "label": "D",
+        "content": "在对话中插入无关信息"
+      }
+    ],
+    "answer": "BC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "7",
+    "question": "7.在提示工程中，如何利用大语言模型的“接龙”特性？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供一个不完整的句子让大语言模型完成"
+      },
+      {
+        "label": "B",
+        "content": "使用特定的分隔符，如\"#\"来指示接龙的开始"
+      },
+      {
+        "label": "C",
+        "content": "提供详细的任务步骤和示例"
+      },
+      {
+        "label": "D",
+        "content": "提供一个详细的背景故事"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "8",
+    "question": "8.在与 ChatGPT 沟通时，为什么建议不要提供过于个人化或敏感的信息？",
+    "options": [
+      {
+        "label": "A",
+        "content": "避免信息泄露和滥用"
+      },
+      {
+        "label": "B",
+        "content": "提高对话的效率"
+      },
+      {
+        "label": "C",
+        "content": "提高模型的准确性"
+      },
+      {
+        "label": "D",
+        "content": "保护个人隐私"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "9",
+    "question": "9.在提示工程中，为了提高大语言模型在处理复杂任务时的表现，以下哪些做法是有帮助的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供详细的任务步骤和示例"
+      },
+      {
+        "label": "B",
+        "content": "使用有序列表来组织任务步骤"
+      },
+      {
+        "label": "C",
+        "content": "在提示中包含系统消息，提供上下文"
+      },
+      {
+        "label": "D",
+        "content": "在多轮对话中保持主题的连贯性"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "10",
+    "question": "10.在提示工程中，为了确保Markdown语法正确应用，以下哪些实践是正确的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用Markdown语法来区分标题和子标题"
+      },
+      {
+        "label": "B",
+        "content": "使用Markdown语法创建表格以展示数据"
+      },
+      {
+        "label": "C",
+        "content": "使用Markdown语法插入代码片段以展示编程示例"
+      },
+      {
+        "label": "D",
+        "content": "使用Markdown语法创建链接以引用外部资源"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "11",
+    "question": "11.在创作一幅融合不同艺术流派的图像时，以下哪些艺术风格可以被考虑？",
+    "options": [
+      {
+        "label": "A",
+        "content": "印象派的光影效果"
+      },
+      {
+        "label": "B",
+        "content": "立体主义的几何构造"
+      },
+      {
+        "label": "C",
+        "content": "表现主义的情感表达"
+      },
+      {
+        "label": "D",
+        "content": "超现实主义的梦幻场景"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "12",
+    "question": "12.在定制化创作中，以下哪些方法可以帮助创作者表达个人情感？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用个人经历中的重要事件"
+      },
+      {
+        "label": "B",
+        "content": "描绘与个人情感相关的特定场景"
+      },
+      {
+        "label": "C",
+        "content": "选择与个人情感相呼应的色彩"
+      },
+      {
+        "label": "D",
+        "content": "采用个人喜欢的艺术流派"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "13",
+    "question": "13.在创作过程中，以下哪些措施有助于避免版权风险？",
+    "options": [
+      {
+        "label": "A",
+        "content": "对所有使用的素材进行版权检查"
+      },
+      {
+        "label": "B",
+        "content": "仅分享个人原创作品"
+      },
+      {
+        "label": "C",
+        "content": "在社区中分享他人的作品并注明作者"
+      },
+      {
+        "label": "D",
+        "content": "使用AI生成的作品冒充人类艺术家的作品"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "14",
+    "question": "14.为了有效利用社区资源，以下哪些做法是推荐的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "定期参与社区的讨论和问答"
+      },
+      {
+        "label": "B",
+        "content": "利用社区的教程和指南学习新技巧"
+      },
+      {
+        "label": "C",
+        "content": "在社区中发布未完成的作品以获取反馈"
+      },
+      {
+        "label": "D",
+        "content": "避免在社区中发布任何内容"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "15",
+    "question": "15.为了提升图像的视觉效果，以下哪些高级修饰技巧是有效的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "使用复杂的光影对比"
+      },
+      {
+        "label": "B",
+        "content": "采用丰富的色彩层次"
+      },
+      {
+        "label": "C",
+        "content": "保持图像的简洁和清晰"
+      },
+      {
+        "label": "D",
+        "content": "强调物体的立体感"
+      }
+    ],
+    "answer": "ABD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "16",
+    "question": "16.为了实现更精细的图像控制，以下哪些高级参数调整是推荐的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "增加迭代次数以提高细节"
+      },
+      {
+        "label": "B",
+        "content": "调整步数以优化图像的平滑度"
+      },
+      {
+        "label": "C",
+        "content": "降低图像分辨率"
+      },
+      {
+        "label": "D",
+        "content": "选择合适的渲染模式以匹配风格"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "17",
+    "question": "17.为了探索创意的可能性，以下哪些提示词组合是值得尝试的？",
+    "options": [
+      {
+        "label": "A",
+        "content": "穿着宇航服的猫在古代城堡"
+      },
+      {
+        "label": "B",
+        "content": "未来都市中的古典音乐会"
+      },
+      {
+        "label": "C",
+        "content": "深海中的机械鲸鱼"
+      },
+      {
+        "label": "D",
+        "content": "赛博朋克风格的禅意花园"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "18",
+    "question": "18.在创作具有叙事性的图像时，以下哪些提示词可以增强故事的情感深度？",
+    "options": [
+      {
+        "label": "A",
+        "content": "角色的内心独白"
+      },
+      {
+        "label": "B",
+        "content": "角色之间的情感纠葛"
+      },
+      {
+        "label": "C",
+        "content": "描绘角色的成长和变化"
+      },
+      {
+        "label": "D",
+        "content": "角色的名字"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "19",
+    "question": "19.下列哪些做法属于提示词的创意实验？",
+    "options": [
+      {
+        "label": "A",
+        "content": "尝试结合意想不到的元素"
+      },
+      {
+        "label": "B",
+        "content": "结合现实主义与抽象艺术"
+      },
+      {
+        "label": "C",
+        "content": "结合不同艺术流派"
+      },
+      {
+        "label": "D",
+        "content": "结合不同艺术风格"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "20",
+    "question": "20.在AIGC创作中，以下哪些做法体现了对原创内容的尊重？",
+    "options": [
+      {
+        "label": "A",
+        "content": "在作品中引用他人的作品并给予适当致谢"
+      },
+      {
+        "label": "B",
+        "content": "未经授权使用他人的艺术作品作为训练数据"
+      },
+      {
+        "label": "C",
+        "content": "将AI生成的作品归功于个人"
+      },
+      {
+        "label": "D",
+        "content": "在作品中明确标注AI的参与和创作过程"
+      }
+    ],
+    "answer": "AD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "21",
+    "question": "21.在文生图工具中，哪些功能可以帮助用户更好地生成图像？",
+    "options": [
+      {
+        "label": "A",
+        "content": "文本引导强度"
+      },
+      {
+        "label": "B",
+        "content": "描述词优化"
+      },
+      {
+        "label": "C",
+        "content": "图像引导强度"
+      },
+      {
+        "label": "D",
+        "content": "关键词填充"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "22",
+    "question": "22.提示词中的基本组成元素包括哪些？",
+    "options": [
+      {
+        "label": "A",
+        "content": "绘画对象"
+      },
+      {
+        "label": "B",
+        "content": "对象描述词"
+      },
+      {
+        "label": "C",
+        "content": "风格修饰词"
+      },
+      {
+        "label": "D",
+        "content": "色彩描述"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "23",
+    "question": "23.在提示词中，哪些词汇可以用来描述绘画对象？",
+    "options": [
+      {
+        "label": "A",
+        "content": "赛博朋克"
+      },
+      {
+        "label": "B",
+        "content": "宇航员"
+      },
+      {
+        "label": "C",
+        "content": "火箭"
+      },
+      {
+        "label": "D",
+        "content": "女孩"
+      }
+    ],
+    "answer": "BCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "24",
+    "question": "24.在以文生图提示词中，用来描述从远处观察的视角，错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "content": "远景视角"
+      },
+      {
+        "label": "B",
+        "content": "近景视角"
+      },
+      {
+        "label": "C",
+        "content": "中景视角"
+      },
+      {
+        "label": "D",
+        "content": "特写视角"
+      }
+    ],
+    "answer": "BCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "25",
+    "question": "25.在提示词中，哪些细节描述语可以用来增强图像的视觉效果？",
+    "options": [
+      {
+        "label": "A",
+        "content": "4K"
+      },
+      {
+        "label": "B",
+        "content": "HDR"
+      },
+      {
+        "label": "C",
+        "content": "8K"
+      },
+      {
+        "label": "D",
+        "content": "清晰"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "26",
+    "question": "26.在提示词中，使用负面提示词的目的包括哪些？",
+    "options": [
+      {
+        "label": "A",
+        "content": "避免不想要的元素"
+      },
+      {
+        "label": "B",
+        "content": "强调想要的元素"
+      },
+      {
+        "label": "C",
+        "content": "提高图像质量"
+      },
+      {
+        "label": "D",
+        "content": "增加图像的细节"
+      }
+    ],
+    "answer": "ABC",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "27",
+    "question": "27.在图像生成过程中，以下哪些因素会影响图像质量？",
+    "options": [
+      {
+        "label": "A",
+        "content": "步数"
+      },
+      {
+        "label": "B",
+        "content": "文本引导强度"
+      },
+      {
+        "label": "C",
+        "content": "图像色彩"
+      },
+      {
+        "label": "D",
+        "content": "图像分辨率"
+      }
+    ],
+    "answer": "ABD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "28",
+    "question": "28.在文生图工具中，以下哪些步骤是图像输出流程的一部分？",
+    "options": [
+      {
+        "label": "A",
+        "content": "图像预览"
+      },
+      {
+        "label": "B",
+        "content": "图像选择"
+      },
+      {
+        "label": "C",
+        "content": "图像下载"
+      },
+      {
+        "label": "D",
+        "content": "图像分享"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "29",
+    "question": "29.在以文生图提示词中，以下哪些风格不能用来生成具有强烈色彩对比和夸张形态的图像？",
+    "options": [
+      {
+        "label": "A",
+        "content": "表现主义"
+      },
+      {
+        "label": "B",
+        "content": "新古典主义"
+      },
+      {
+        "label": "C",
+        "content": "洛可可"
+      },
+      {
+        "label": "D",
+        "content": "最小主义"
+      }
+    ],
+    "answer": "BCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "30",
+    "question": "30.在生成具有特定材质效果的图像时，以下哪个材质可以用来强调光泽感？",
+    "options": [
+      {
+        "label": "A",
+        "content": "丝绸"
+      },
+      {
+        "label": "B",
+        "content": "皮革"
+      },
+      {
+        "label": "C",
+        "content": "石头"
+      },
+      {
+        "label": "D",
+        "content": "陶瓷"
+      }
+    ],
+    "answer": "AD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "31",
+    "question": "31.AIGC技术的主要应用有哪些？",
+    "options": [
+      {
+        "label": "A",
+        "content": "内容创作"
+      },
+      {
+        "label": "B",
+        "content": "产品设计"
+      },
+      {
+        "label": "C",
+        "content": "数据分析"
+      },
+      {
+        "label": "D",
+        "content": "游戏开发"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "32",
+    "question": "32. AdobeEdu.com AIGC联盟网站提供的资源和服务包括哪些方面？",
+    "options": [
+      {
+        "label": "A",
+        "content": "提供AIGC领域的商务合作机会"
+      },
+      {
+        "label": "B",
+        "content": "分享AIGC教程和视频，帮助应用者提升技能"
+      },
+      {
+        "label": "C",
+        "content": "提供当下最新最流行AIGC工具及网址导航，适用于商业用途"
+      },
+      {
+        "label": "D",
+        "content": "提供AIGC提示词模版资源，帮助用户更高效地生成创意内容，提升创作效率。"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "33",
+    "question": "33.使用AIGC工具，可以生成？",
+    "options": [
+      {
+        "label": "A",
+        "content": "文章"
+      },
+      {
+        "label": "B",
+        "content": "图片"
+      },
+      {
+        "label": "C",
+        "content": "程序代码"
+      },
+      {
+        "label": "D",
+        "content": "视频"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "34",
+    "question": "34.大语言模型的上下文连贯性体现在哪些方面？",
+    "options": [
+      {
+        "label": "A",
+        "content": "对话历史记忆"
+      },
+      {
+        "label": "B",
+        "content": "逻辑推理"
+      },
+      {
+        "label": "C",
+        "content": "情感理解"
+      },
+      {
+        "label": "D",
+        "content": "文化适应性"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "35",
+    "question": "35.AIGC（人工智能生成内容）的案例是什么？",
+    "options": [
+      {
+        "label": "A",
+        "content": "AIGC能做数学题、写诗、翻译"
+      },
+      {
+        "label": "B",
+        "content": "AIGC根据你描述的场景，自动画出一幅画"
+      },
+      {
+        "label": "C",
+        "content": "AIGC根据你的要求，生成菜谱，并制作出这道菜"
+      },
+      {
+        "label": "D",
+        "content": "AIGC可以识别一张猫的图片，能告诉你这是一只橘色的猫"
+      }
+    ],
+    "answer": "ABD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "36",
+    "question": "36.利用AIGC进行创意写作可以包括？",
+    "options": [
+      {
+        "label": "A",
+        "content": "小说写作"
+      },
+      {
+        "label": "B",
+        "content": "散文写作"
+      },
+      {
+        "label": "C",
+        "content": "童话写作"
+      },
+      {
+        "label": "D",
+        "content": "歌词写作"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "37",
+    "question": "37.关于Transformer模型应用领域错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "content": "图像处理"
+      },
+      {
+        "label": "B",
+        "content": "自然语言处理"
+      },
+      {
+        "label": "C",
+        "content": "音频处理"
+      },
+      {
+        "label": "D",
+        "content": "数据库管理"
+      }
+    ],
+    "answer": "ACD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "38",
+    "question": "38.以下术语含义不是“用户生成内容”的是？",
+    "options": [
+      {
+        "label": "A",
+        "content": "UGC"
+      },
+      {
+        "label": "B",
+        "content": "PGC"
+      },
+      {
+        "label": "C",
+        "content": "AIGC"
+      },
+      {
+        "label": "D",
+        "content": "NLP"
+      }
+    ],
+    "answer": "BCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "39",
+    "question": "39.在自然语言处理（NLP）中，关于\"token\"含义错误的是？",
+    "options": [
+      {
+        "label": "A",
+        "content": "一个完整的句子"
+      },
+      {
+        "label": "B",
+        "content": "一个单词或标点符号"
+      },
+      {
+        "label": "C",
+        "content": "一个段落"
+      },
+      {
+        "label": "D",
+        "content": "一个完整的文档"
+      }
+    ],
+    "answer": "ACD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "40",
+    "question": "40.在AIGC中，哪些因素对于生成高质量内容至关重要？",
+    "options": [
+      {
+        "label": "A",
+        "content": "高质量的预训练模型（Pre-trained Models）"
+      },
+      {
+        "label": "B",
+        "content": "精确的提示词工程（Prompt Engineering）"
+      },
+      {
+        "label": "C",
+        "content": "多模态人工智能（Multimodal AI）"
+      },
+      {
+        "label": "D",
+        "content": "用户生成内容（UGC）的反馈"
+      }
+    ],
+    "answer": "ABCD",
+    "type": "multiple",
+    "verified": false,
+    "answer_points": null
+  },
+  {
+    "number": "1",
+    "question": "在AIGC技术中，Prompt Engineering（提示词工程）是一种重要的技术手段。请简述Prompt Engineering的目的，并结合实际应用经验，解释如何通过设计有效的提示词来提高大语言模型在图像生成任务中的输出质量和相关性。",
+    "options": [],
+    "answer": "",
+    "type": "essay",
+    "verified": false,
+    "answer_points": [
+      "Prompt Engineering 的目的是提高人工智能回应的有效性、可用性和满足用户需求的程度。",
+      "设计有效的提示词需要提供清晰的指令和上下文信息，确保模型能够准确理解任务要求。",
+      "利用文件中提到的“概括”、“背景”、“行动呼吁”等Prompt技巧，可以帮助模型更好地理解任务的背景和目标，从而生成更准确的图像。"
+    ]
+  },
+  {
+    "number": "2",
+    "question": "在使用AIGC工具进行艺术创作时，如何利用多模态能力来生成具有叙事性的图像系列，并确保这些图像在风格和主题上的连贯性？请结合实际应用经验，阐述你的创作流程。",
+    "options": [],
+    "answer": "",
+    "type": "essay",
+    "verified": false,
+    "answer_points": [
+      "利用AIGC工具的多模态能力，结合文本、图像和其他可能的输入模式来生成图像。",
+      "首先，根据文件中的“主题研究与构思”步骤，深入理解所选主题，并探索不同历史时期和未来世界的元素。",
+      "在“故事线构建”步骤中，创建一个连贯的故事线，确保整个图像系列有清晰的叙事线索。",
+      "参考“风格融合与创作”步骤，结合现实主义与抽象艺术的风格，为每幅插画设计独特的视觉风格，同时保持风格上的连贯性。",
+      "在“版权与伦理考量”步骤中，确保所有创作内容的原创性，避免侵权，这也保证了整个系列在主题表达上的一致性。"
+    ]
+  }
+]

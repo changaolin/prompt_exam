@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>题库上传 - AI提示词工程师考试系统</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>题库上传</h1>
+
+      <div class="upload-section">
+        <h2>上传题目文件</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+          <div class="file-input">
+            <input
+              type="file"
+              id="questionFile"
+              name="file"
+              accept=".doc,.docx"
+            />
+            <label for="questionFile">选择题目文件</label>
+          </div>
+          <div class="file-info">支持的文件格式：DOC、DOCX</div>
+          <div id="selectedFile" class="selected-file"></div>
+          <button type="submit">上传并解析</button>
+        </form>
+
+        <div class="custom-parser-section" style="display: none">
+          <h3>自定义解析器</h3>
+          <p>如果默认解析器无法正确解析您的文档，您可以使用自定义解析脚本：</p>
+
+          <div class="parser-upload">
+            <form id="parserForm" enctype="multipart/form-data">
+              <div class="file-input">
+                <input type="file" id="parserFile" name="parser" accept=".py" />
+                <label for="parserFile">选择解析脚本</label>
+              </div>
+              <div id="selectedParserFile" class="selected-file"></div>
+              <button type="submit">使用自定义脚本解析</button>
+            </form>
+          </div>
+
+          <details class="parser-info">
+            <summary>查看解析脚本说明</summary>
+            <div class="code-example">
+              <pre><code>def parse_questions(content: str) -> list[dict]:
+    """
+    解析文档内容，返回题目列表
+    参数: content - 文档文本内容
+    返回: 题目列表，格式如下：
+    {
+        'number': str,      # 题号
+        'question': str,    # 题目内容
+        'type': str,       # single/multiple/essay
+        'options': list,    # [{'label': 'A', 'content': '...'}]
+        'answer': str,     # 单选A-D，多选多个字母
+        'answer_points': list # 简答题答案要点
+    }
+    """</code></pre>
+            </div>
+            <div class="parser-actions">
+              <button
+                type="button"
+                class="download-link"
+                onclick="downloadExampleParser()"
+              >
+                下载示例脚本
+              </button>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="preview-section" style="display: none">
+        <h3>题目预览</h3>
+        <div class="preview-stats">
+          <span>总题数：<span id="totalQuestions">0</span></span>
+          <span>单选题：<span id="singleCount">0</span></span>
+          <span>多选题：<span id="multipleCount">0</span></span>
+          <span>简答题：<span id="essayCount">0</span></span>
+        </div>
+        <div class="preview-filter">
+          <label for="questionTypeFilter">题目类型：</label>
+          <select id="questionTypeFilter">
+            <option value="all">全部</option>
+            <option value="single">单选题</option>
+            <option value="multiple">多选题</option>
+            <option value="essay">简答题</option>
+          </select>
+        </div>
+        <div id="questionsList" class="questions-list"></div>
+        <div class="preview-actions">
+          <button id="saveQuestions" class="save-btn">保存题库</button>
+        </div>
+      </div>
+
+      <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>编辑题目</h2>
+          <form id="editForm">
+            <input type="hidden" id="editQuestionIndex" />
+            <div class="form-group">
+              <label for="editQuestionText">题目内容：</label>
+              <textarea id="editQuestionText" required></textarea>
+            </div>
+            <div id="editOptionsContainer">
+              <label>选项：</label>
+              <div id="editOptions"></div>
+            </div>
+            <div class="form-group">
+              <label for="editAnswer">答案：</label>
+              <input type="text" id="editAnswer" required />
+            </div>
+            <div id="editAnswerPoints" style="display: none">
+              <label>答案要点：</label>
+              <div id="answerPointsList"></div>
+              <button type="button" id="addAnswerPoint">添加答案要点</button>
+            </div>
+            <div class="form-actions">
+              <button type="submit">保存</button>
+              <button type="button" class="cancel">取消</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 只保留工具函数
+      function getQuestionTypeName(type) {
+        const types = {
+          single: "单选题",
+          multiple: "多选题",
+          essay: "简答题",
+        };
+        return types[type] || type;
+      }
+    </script>
+    <script src="{{ url_for('static', filename='js/questionEditor.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+    <script>
+      // 确保DOM加载完成后初始化
+      document.addEventListener("DOMContentLoaded", function () {
+        // 编辑模式切换
+        document
+          .getElementById("editMode")
+          .addEventListener("click", function () {
+            const questionsList = document.getElementById("questionsList");
+            questionsList.classList.toggle("edit-mode");
+            this.textContent = questionsList.classList.contains("edit-mode")
+              ? "退出编辑模式"
+              : "进入编辑模式";
+          });
+      });
+    </script>
+  </body>
+</html>

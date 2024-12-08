@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI提示词工程师考试系统</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <style>
+      .stage-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .stage-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .stage-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .stage-card h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .stage-card p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .stage-card a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+      }
+
+      .stage-card a:hover {
+        background-color: #0056b3;
+      }
+
+      .stage-card.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .stage-card.disabled a {
+        background-color: #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI提示词工程师考试系统</h1>
+
+      <div class="stage-grid">
+        <div class="stage-card">
+          <h2>第一阶段</h2>
+          <p>题库上传与解析</p>
+          <a href="/upload">进入上传</a>
+        </div>
+
+        <div class="stage-card">
+          <h2>第二阶段</h2>
+          <p>题库校验</p>
+          <a href="/verify">进入校验</a>
+        </div>
+
+        <div class="stage-card">
+          <h2>第三阶段</h2>
+          <p>开始考试</p>
+          <a href="/exam">进入考试</a>
+        </div>
+
+        <div class="stage-card">
+          <h2>第四阶段</h2>
+          <p>考题分析</p>
+          <a href="/analysis">查看分析</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
