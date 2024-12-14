@@ -28,9 +28,9 @@ ENV/
 .venv
 
 # Flask
-# instance/
+instance/*
 .webassets-cache
-# db
+*.db
 *.sqlite
 *.sqlite3
 
@@ -76,7 +76,7 @@ coverage.xml
 .env.production.local
 
 # Database
-# *.db
+*.db
 *.sqlite
 *.sqlite3
 
