@@ -8,12 +8,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 上传部分样式 */
@@ -310,7 +307,7 @@ button.secondary:hover {
     margin-top: 20px;
 }
 
-/* 编辑模式样式 */
+/* 编辑模样式 */
 .edit-mode .question-item {
     border: 1px solid #007bff;
     padding-right: 40px;
@@ -621,4 +618,237 @@ button.secondary:hover {
 .save-btn:disabled {
     background-color: #6c757d;
     cursor: not-allowed;
+}
+
+/* 考试页面样式 */
+.exam-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #dc3545;
+    padding: 10px 20px;
+    border: 2px solid #dc3545;
+    border-radius: 4px;
+}
+
+/* 简答题样式 */
+.answer-area {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.answer-area textarea {
+    width: 100%;
+    min-height: 200px;
+    max-width: 100%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.answer-area textarea:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* 题目样式 */
+.question-section {
+    margin-bottom: 30px;
+}
+
+.question-section h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+}
+
+.question-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.question-header {
+    margin-bottom: 15px;
+}
+
+.question-number {
+    font-weight: bold;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.question-text {
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+/* 选项样式 */
+.options {
+    margin-left: 25px;
+}
+
+.option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="radio"],
+.option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.option label {
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/* 提交按钮样式 */
+.exam-actions {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.submit-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* 确保所有内容都在容器内 */
+* {
+    box-sizing: border-box;
+}
+
+/* 考试结果页面样式 */
+.result-summary {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result-summary h2 {
+    color: #28a745;
+    margin: 0;
+}
+
+.question-result {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.question-result.correct {
+    border-left: 4px solid #28a745;
+}
+
+.question-result.incorrect {
+    border-left: 4px solid #dc3545;
+}
+
+.question-score {
+    float: right;
+    font-weight: bold;
+}
+
+.option.correct {
+    color: #28a745;
+}
+
+.option.selected {
+    font-weight: bold;
+}
+
+.option.selected.correct {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.option.selected:not(.correct) {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+.answer-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+}
+
+.essay-answer {
+    margin-top: 15px;
+}
+
+.user-answer {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    white-space: pre-wrap;
+}
+
+.answer-points {
+    padding-left: 20px;
+    color: #28a745;
+}
+
+.actions {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }

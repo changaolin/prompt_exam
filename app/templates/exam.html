@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试 - AI提示词工程师考试系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="exam-header">
+            <h1>AI提示词工程师考试</h1>
+            <div class="timer">
+                剩余时间：<span id="countdown">120:00</span>
+            </div>
+        </div>
+        <div class="exam-info">
+            <p>考试时间：120分钟</p>
+            <p>总分：100分</p>
+        </div>
+        <div class="exam-content">
+            <div id="questionContainer"></div>
+        </div>
+        <div class="exam-actions">
+            <button id="submitExam" class="submit-btn">提交考试</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/exam.js') }}"></script>
+</body>
+</html>

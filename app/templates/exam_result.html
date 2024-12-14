@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试结果 - AI提示词工程师考试系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>考试结果</h1>
+
+        {% if results %}
+        <div class="result-summary">
+            <h2>总分：{{ total_score }} 分</h2>
+        </div>
+        <div class="result-details">
+            {% for result in results %}
+            <div class="question-result {% if result.score > 0 %}correct{% else %}incorrect{% endif %}">
+                <div class="question-header">
+                    <span class="question-number">{{ result.number }}.</span>
+                    <span class="question-type">[{{ '单选题' if result.type == 'single' else '多选题' if result.type == 'multiple' else '简答题' }}]</span>
+                    <span class="question-score">得分：{{ result.score }}</span>
+                </div>
+                <div class="question-content">{{ result.question }}</div>
+
+                {% if result.type in ['single', 'multiple'] %}
+                <div class="options">
+                    {% for option in result.options %}
+                    <div class="option {% if option.label in result.correct_answer %}correct{% endif %} {% if option.label in result.user_answer %}selected{% endif %}">
+                        <span class="option-label">{{ option.label }}.</span>
+                        <span class="option-content">{{ option.content }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="answer-info">
+                    <p>你的答案：{{ result.user_answer }}</p>
+                    <p>正确答案：{{ result.correct_answer }}</p>
+                </div>
+                {% else %}
+                <div class="essay-answer">
+                    <h4>你的答案：</h4>
+                    <div class="user-answer">{{ result.user_answer }}</div>
+                    <h4>答案要点：</h4>
+                    <ul class="answer-points">
+                        {% for point in result.answer_points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-results">
+            <p>未找到考试结果数据</p>
+        </div>
+        {% endif %}
+
+        <div class="actions">
+            <a href="{{ url_for('main.index') }}" class="btn">返回首页</a>
+        </div>
+    </div>
+
+    <script>
+    // 防止浏览器后退导致重复提交
+    window.history.pushState(null, '', window.location.href);
+    window.onpopstate = function() {
+        window.history.pushState(null, '', window.location.href);
+    };
+    </script>
+</body>
+</html>
