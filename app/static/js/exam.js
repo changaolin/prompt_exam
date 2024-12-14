@@ -102,7 +102,7 @@ function displayQuestions(questions) {
 
     // 显示多选题
     if (multipleQuestions.length > 0) {
-        html += '<div class="question-section"><h2>���、多选题</h2>';
+        html += '<div class="question-section"><h2>二、多选题</h2>';
         html += multipleQuestions.map((q, index) => `
             <div class="question-item" data-id="${q.id}">
                 <div class="question-header">
@@ -207,4 +207,47 @@ async function submitExam() {
         // 如果提交失败，重新启动计时器
         startTimer();
     }
+}
+
+function createQuestionElement(question) {
+    const div = document.createElement('div');
+    div.className = 'question-item';
+    div.dataset.id = question.id;
+
+    let html = `
+        <div class="question-type">
+            ${question.type === 'single' ? '单选题' :
+              question.type === 'multiple' ? '多选题' : '简答题'}
+            （第${question.number}题）
+        </div>
+        <div class="question-text">${question.question}</div>
+    `;
+
+    if (question.type === 'single' || question.type === 'multiple') {
+        html += '<div class="options">';
+        question.options.forEach(option => {
+            const inputType = question.type === 'single' ? 'radio' : 'checkbox';
+            html += `
+                <div class="option">
+                    <input type="${inputType}"
+                           id="q${question.id}_${option.label}"
+                           name="q${question.id}"
+                           value="${option.label}">
+                    <label for="q${question.id}_${option.label}">
+                        ${option.label}. ${option.content}
+                    </label>
+                </div>
+            `;
+        });
+        html += '</div>';
+    } else {
+        html += `
+            <div class="essay-answer">
+                <textarea placeholder="请在此输入你的答案..."></textarea>
+            </div>
+        `;
+    }
+
+    div.innerHTML = html;
+    return div;
 }

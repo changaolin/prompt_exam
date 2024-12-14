@@ -11,13 +11,94 @@ exam_results_store = {}
 
 @exam_bp.route('/start')
 def start():
-    """开始考试"""
-    return render_template('exam.html')
+    """显示考试配置页面"""
+    # 获取题库中各类型题目的数量
+    latest_bank = QuestionBank.query.order_by(QuestionBank.id.desc()).first()
+    question_counts = {
+        'single': 0,
+        'multiple': 0,
+        'essay': 0
+    }
+
+    if latest_bank:
+        all_questions = latest_bank.questions
+        question_counts = {
+            'single': len([q for q in all_questions if q.type == 'single']),
+            'multiple': len([q for q in all_questions if q.type == 'multiple']),
+            'essay': len([q for q in all_questions if q.type == 'essay'])
+        }
+
+    return render_template('exam.html', question_counts=question_counts)
+
+@exam_bp.route('/configure', methods=['POST'])
+def configure():
+    """处理考试配置"""
+    try:
+        config = request.get_json()
+        latest_bank = QuestionBank.query.order_by(QuestionBank.id.desc()).first()
+
+        if not latest_bank:
+            return jsonify({
+                'success': False,
+                'error': '没有可用的题库'
+            }), 400
+
+        all_questions = latest_bank.questions
+        available_counts = {
+            'single': len([q for q in all_questions if q.type == 'single']),
+            'multiple': len([q for q in all_questions if q.type == 'multiple']),
+            'essay': len([q for q in all_questions if q.type == 'essay'])
+        }
+
+        # 验证配置
+        single_count = min(max(0, config.get('singleCount', 10)), min(20, available_counts['single']))
+        multiple_count = min(max(0, config.get('multipleCount', 5)), min(10, available_counts['multiple']))
+        essay_count = min(max(0, config.get('essayCount', 1)), min(3, available_counts['essay']))
+        duration = min(max(30, config.get('duration', 120)), 180)
+
+        # 存储配置到session
+        session['exam_config'] = {
+            'single_count': single_count,
+            'multiple_count': multiple_count,
+            'essay_count': essay_count,
+            'duration': duration
+        }
+
+        return jsonify({
+            'success': True,
+            'redirect': url_for('exam.exam_page')
+        })
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 400
+
+@exam_bp.route('/page')
+def exam_page():
+    """显示考试页面"""
+    config = session.get('exam_config', {
+        'single_count': 10,
+        'multiple_count': 5,
+        'essay_count': 1,
+        'duration': 120
+    })
+
+    return render_template('exam_page.html', **config)
 
 @exam_bp.route('/questions')
 def get_questions():
     """获取考试题目"""
     try:
+        # 从session获取配置
+        config = session.get('exam_config', {
+            'single_count': 10,
+            'multiple_count': 5,
+            'essay_count': 1,
+            'duration': 120
+        })
+
         # 获取最新的题库
         latest_bank = QuestionBank.query.order_by(QuestionBank.id.desc()).first()
 
@@ -34,12 +115,12 @@ def get_questions():
 
         # 随机选择题目
         selected_questions = []
-        question_numbers = {}  # 用于存储题目ID和编号的映射
+        question_numbers = {}
         current_number = 1
 
         # 添加单选题
-        if single_choice:
-            single_selected = sample(single_choice, min(20, len(single_choice)))
+        if single_choice and config['single_count'] > 0:
+            single_selected = sample(single_choice, min(config['single_count'], len(single_choice)))
             for q in single_selected:
                 question_dict = {
                     'id': q.id,
@@ -56,8 +137,8 @@ def get_questions():
                 selected_questions.append(question_dict)
 
         # 添加多选题
-        if multiple_choice:
-            multiple_selected = sample(multiple_choice, min(20, len(multiple_choice)))
+        if multiple_choice and config['multiple_count'] > 0:
+            multiple_selected = sample(multiple_choice, min(config['multiple_count'], len(multiple_choice)))
             for q in multiple_selected:
                 question_dict = {
                     'id': q.id,
@@ -65,7 +146,10 @@ def get_questions():
                     'type': 'multiple',
                     'question': q.question,
                     'options': [
-                        {'label': opt.label, 'content': opt.content}
+                        {
+                            'label': opt.label,
+                            'content': opt.content.strip()  # 确保去除多余空白
+                        }
                         for opt in q.options
                     ]
                 }
@@ -74,8 +158,8 @@ def get_questions():
                 selected_questions.append(question_dict)
 
         # 添加简答题
-        if essay:
-            essay_selected = sample(essay, min(1, len(essay)))
+        if essay and config['essay_count'] > 0:
+            essay_selected = sample(essay, min(config['essay_count'], len(essay)))
             for q in essay_selected:
                 question_dict = {
                     'id': q.id,
@@ -103,7 +187,7 @@ def get_questions():
 
 @exam_bp.route('/submit', methods=['POST'])
 def submit_exam():
-    """提交考试答案"""
+    """���交考试答案"""
     try:
         data = request.get_json()
         if not data or 'answers' not in data:
@@ -180,7 +264,7 @@ def submit_exam():
         print("提交考试答案时出错:", str(e))
         return jsonify({
             'success': False,
-            'error': f'提交失败: {str(e)}'
+            'error': f'提��失败: {str(e)}'
         }), 500
 
 @exam_bp.route('/result/<result_id>')

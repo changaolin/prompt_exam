@@ -3,28 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>考试 - AI提示词工程师考试系统</title>
+    <title>考试配置 - AI提示词工程师考试系统</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="container">
-        <div class="exam-header">
-            <h1>AI提示词工程师考试</h1>
-            <div class="timer">
-                剩余时间：<span id="countdown">120:00</span>
-            </div>
-        </div>
-        <div class="exam-info">
-            <p>考试时间：120分钟</p>
-            <p>总分：100分</p>
-        </div>
-        <div class="exam-content">
-            <div id="questionContainer"></div>
-        </div>
-        <div class="exam-actions">
-            <button id="submitExam" class="submit-btn">提交考试</button>
+        <h1>考试配置</h1>
+        <div class="exam-config">
+            <form id="examConfigForm" class="config-form">
+                <div class="form-group">
+                    <label for="singleCount">单选题数量：</label>
+                    <input type="number" id="singleCount" name="singleCount" min="0" max="{{ question_counts.single }}" value="10">
+                    <span class="hint">（题库中共有 {{ question_counts.single }} 题）</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="multipleCount">多选题数量：</label>
+                    <input type="number" id="multipleCount" name="multipleCount" min="0" max="{{ question_counts.multiple }}" value="5">
+                    <span class="hint">（题库中共有 {{ question_counts.multiple }} 题）</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="essayCount">简答题数量：</label>
+                    <input type="number" id="essayCount" name="essayCount" min="0" max="{{ question_counts.essay }}" value="1">
+                    <span class="hint">（题库中共有 {{ question_counts.essay }} 题）</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">考试时长（分钟）：</label>
+                    <input type="number" id="duration" name="duration" min="30" max="180" value="120">
+                    <span class="hint">（30-180分钟）</span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">开始考试</button>
+                    <a href="{{ url_for('main.index') }}" class="btn btn-secondary">返回首页</a>
+                </div>
+            </form>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='js/exam.js') }}"></script>
+
+    <script>
+        // 设置默认值和最大值
+        window.onload = function() {
+            const counts = {
+                single: {{ question_counts.single }},
+                multiple: {{ question_counts.multiple }},
+                essay: {{ question_counts.essay }}
+            };
+
+            // 设置默认值（不超过可用题目数量）
+            document.getElementById('singleCount').value = Math.min(10, counts.single);
+            document.getElementById('multipleCount').value = Math.min(5, counts.multiple);
+            document.getElementById('essayCount').value = Math.min(1, counts.essay);
+        };
+
+        document.getElementById('examConfigForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const config = {
+                singleCount: parseInt(document.getElementById('singleCount').value),
+                multipleCount: parseInt(document.getElementById('multipleCount').value),
+                essayCount: parseInt(document.getElementById('essayCount').value),
+                duration: parseInt(document.getElementById('duration').value)
+            };
+
+            try {
+                const response = await fetch('/exam/configure', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(config)
+                });
+
+                if (!response.ok) {
+                    throw new Error('配置提交失败');
+                }
+
+                const result = await response.json();
+                if (result.success) {
+                    window.location.href = result.redirect;
+                } else {
+                    alert(result.error || '配置失败');
+                }
+            } catch (error) {
+                alert('配置提交失败：' + error.message);
+            }
+        });
+    </script>
 </body>
 </html>
