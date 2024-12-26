@@ -194,7 +194,6 @@ async function submitExam() {
 
         const result = await response.json();
         if (result.success) {
-            alert('考试提交成功！即将显示考试结果。');
             // 直接跳转到结果页面
             window.location.href = result.redirect;
         } else {

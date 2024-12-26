@@ -51,9 +51,9 @@ def configure():
         }
 
         # 验证配置
-        single_count = min(max(0, config.get('singleCount', 10)), min(20, available_counts['single']))
-        multiple_count = min(max(0, config.get('multipleCount', 5)), min(10, available_counts['multiple']))
-        essay_count = min(max(0, config.get('essayCount', 1)), min(3, available_counts['essay']))
+        single_count = min(max(0, config.get('singleCount', 10)), available_counts['single'])
+        multiple_count = min(max(0, config.get('multipleCount', 5)), available_counts['multiple'])
+        essay_count = min(max(0, config.get('essayCount', 1)), available_counts['essay'])
         duration = min(max(30, config.get('duration', 120)), 180)
 
         # 存储配置到session
