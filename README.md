@@ -17,11 +17,12 @@ pip install -r requirements.txt
 ```bash
 python run.py
 ```
+![启动服务](res/image1.png)
 ## 访问服务
 ```bash
 http://localhost:5001/
 ```
-![访问服务](res/image1.png)
+![访问服务](res/image2.png)
 ### 上传题库
 ![上传题库](res/image3.png)
 ![保存题库](res/image4.png)
